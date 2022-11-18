@@ -5,7 +5,7 @@ pipeline{
             steps{
                 sh "chmod 777 check.sh"
                 sh "./check.sh"
-                
+                sh "echo hello"
             }
         }
         stage("test"){
